@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="pb-10 pt-16">
       <div className="container-space flex flex-col items-center justify-center">
         <Image
-          src="/logo_footer.jpg"
+          src={process.env.NEXT_PUBLIC_HOMEPAGE + "/logo_footer.jpg"}
           alt="Footer Logo"
           width={1329}
           height={403}

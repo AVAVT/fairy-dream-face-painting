@@ -10,73 +10,73 @@ const randomRotate = (deg: number) => Math.random() * deg * 2 - deg;
 
 const carouselImages = [
   {
-    name: "/face0.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face0.jpg`,
     width: 1536,
     height: 2048,
     rotate: randomRotate(4),
   },
   {
-    name: "/face1.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face1.jpg`,
     width: 1536,
     height: 2048,
     rotate: randomRotate(4),
   },
   {
-    name: "/face2.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face2.jpg`,
     width: 1317,
     height: 1645,
     rotate: randomRotate(4),
   },
   {
-    name: "/face3.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face3.jpg`,
     width: 1115,
     height: 1263,
     rotate: randomRotate(4),
   },
   {
-    name: "/face4.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face4.jpg`,
     width: 2048,
     height: 1536,
     rotate: randomRotate(4),
   },
   {
-    name: "/face5.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face5.jpg`,
     width: 1536,
     height: 2048,
     rotate: randomRotate(4),
   },
   {
-    name: "/face6.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face6.jpg`,
     width: 1536,
     height: 2048,
     rotate: randomRotate(4),
   },
   {
-    name: "/face7.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face7.jpg`,
     width: 1043,
     height: 1330,
     rotate: randomRotate(4),
   },
   {
-    name: "/face8.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face8.jpg`,
     width: 1536,
     height: 2048,
     rotate: randomRotate(4),
   },
   {
-    name: "/face9.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face9.jpg`,
     width: 1278,
     height: 1814,
     rotate: randomRotate(4),
   },
   {
-    name: "/face10.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face10.jpg`,
     width: 1536,
     height: 2048,
     rotate: randomRotate(4),
   },
   {
-    name: "/arm4.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/arm4.jpg`,
     width: 2048,
     height: 1361,
     rotate: randomRotate(4),
@@ -85,37 +85,37 @@ const carouselImages = [
 
 const arms = [
   {
-    name: "/arm1.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/arm1.jpg`,
     width: 1446,
     height: 2046,
     rotate: randomRotate(15),
   },
   {
-    name: "/arm5.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/arm5.jpg`,
     width: 2086,
     height: 1568,
     rotate: randomRotate(15),
   },
   {
-    name: "/arm2.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/arm2.jpg`,
     width: 1536,
     height: 2048,
     rotate: randomRotate(15),
   },
   {
-    name: "/arm3.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/arm3.jpg`,
     width: 1450,
     height: 2048,
     rotate: randomRotate(15),
   },
   {
-    name: "/arm4.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/arm4.jpg`,
     width: 2048,
     height: 1361,
     rotate: randomRotate(15),
   },
   {
-    name: "/face6.jpg",
+    name: `${process.env.NEXT_PUBLIC_HOMEPAGE}/face6.jpg`,
     width: 1536,
     height: 2048,
     rotate: randomRotate(4),
@@ -160,7 +160,7 @@ export default function Home() {
         <div className="flex flex-col justify-center items-center flex-none lg:w-[25%]">
           <Image
             className="max-w-[33vh] h-auto"
-            src="/logo.jpg"
+            src={`${process.env.NEXT_PUBLIC_HOMEPAGE}/logo.jpg`}
             alt="Fairy Dream Face Painting Logo"
             width={1024}
             height={1024}
@@ -198,7 +198,7 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row gap-12 container-space justify-center items-center lg:items-start">
           <Image
             className="h-[100%] flex-0 rounded-lg shadow-md my-4 lg:order-1"
-            src="/family.jpg"
+            src={`${process.env.NEXT_PUBLIC_HOMEPAGE}/family.jpg`}
             alt="who we are"
             width={400}
             height={400}
@@ -242,7 +242,7 @@ export default function Home() {
               alt={img.name}
               width={img.width}
               height={img.height}
-              className="absolute top-[50%] w-[30%] min-h-[120%]"
+              className="absolute top-[50%] w-[30%] min-h-[120%] rounded-2xl"
               {...(isClient
                 ? {
                     style: {
@@ -262,7 +262,7 @@ export default function Home() {
             {["DBS Checked", "Insurrance Covered", "Hygene"].map((i) => (
               <div
                 key={i}
-                className="flex bg-white flex-col gap-4 w-[17rem] max-w-[30lvw] justify-center items-center text-[#9C3C74] rounded-3xl py-10 px-4 shadow-sm"
+                className="flex bg-white flex-col gap-4 w-[17rem] max-w-[30lvw] justify-center items-center text-[#9C3C74] rounded-3xl py-4 lg:py-10 px-4 shadow-sm"
               >
                 <FontAwesomeIcon
                   icon={faCheckSquare}
@@ -289,8 +289,8 @@ export default function Home() {
               rel="noopener"
             >
               <Image
-                src="/qr-facebook.svg"
-                alt="Footer Logo"
+                src={`${process.env.NEXT_PUBLIC_HOMEPAGE}/qr-facebook.svg`}
+                alt="Facebook QR Code"
                 width={350}
                 height={350}
                 className="max-h-[25lvh] w-auto bg-white rounded-lg p-2 shadow-md hover:-translate-y-1 hover:shadow-lg duration-150"
@@ -302,8 +302,8 @@ export default function Home() {
               rel="noopener"
             >
               <Image
-                src="/qr-instagram.svg"
-                alt="Footer Logo"
+                src={`${process.env.NEXT_PUBLIC_HOMEPAGE}/qr-instagram.svg`}
+                alt="Instagram QR Code"
                 width={350}
                 height={350}
                 className="max-h-[25lvh] w-auto bg-white rounded-lg p-2 shadow-md hover:-translate-y-1 hover:shadow-lg duration-150"
@@ -312,7 +312,7 @@ export default function Home() {
           </div>
           <div className="text-center text-xl text-white mt-2">
             Want to pay us a visit?{" "}
-            <Link href="contact" className="underline">
+            <Link href="contact" className="underline font-bold">
               Contact now
             </Link>
           </div>

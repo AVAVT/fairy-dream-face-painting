@@ -1,7 +1,17 @@
-import type { NextConfig } from "next";
+import { PHASE_DEVELOPMENT_SERVER } from "next/constants";
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+export default function nextConfig(phase: string) {
+  if (phase === PHASE_DEVELOPMENT_SERVER) {
+    return {
+      /* development only config options here */
+    };
+  }
 
-export default nextConfig;
+  return {
+    output: "export",
+    basePath: "/fairy-dream-face-painting",
+    images: {
+      unoptimized: true,
+    },
+  };
+}
