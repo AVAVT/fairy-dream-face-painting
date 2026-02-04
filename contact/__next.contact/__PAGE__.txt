@@ -1,5 +1,5 @@
 1:"$Sreact.fragment"
 2:I[59374,["/fairy-dream-face-painting/_next/static/chunks/c835ef42487ce2c8.js","/fairy-dream-face-painting/_next/static/chunks/f19e4129d752cb5c.js"],"OutletBoundary"]
 3:"$Sreact.suspense"
-0:{"buildId":"sodHrwoXUksWeth_PRHvq","rsc":["$","$1","c",{"children":[["$","div",null,{}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"pPNrPLfxlaVf2mCxg-47J","rsc":["$","$1","c",{"children":[["$","div",null,{}],null,["$","$L2",null,{"children":["$","$3",null,{"name":"Next.MetadataOutlet","children":"$@4"}]}]]}],"loading":null,"isPartial":false}
 4:null
