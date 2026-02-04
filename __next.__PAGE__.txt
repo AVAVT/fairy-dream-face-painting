@@ -1,9 +1,9 @@
 1:"$Sreact.fragment"
 2:I[8597,["/fairy-dream-face-painting/_next/static/chunks/c835ef42487ce2c8.js","/fairy-dream-face-painting/_next/static/chunks/f19e4129d752cb5c.js"],"ClientPageRoot"]
-3:I[52683,["/fairy-dream-face-painting/_next/static/chunks/cce392d0f0aeb78d.js","/fairy-dream-face-painting/_next/static/chunks/cdae547031b4f34f.js"],"default"]
+3:I[52683,["/fairy-dream-face-painting/_next/static/chunks/cce392d0f0aeb78d.js","/fairy-dream-face-painting/_next/static/chunks/1437133c83fc954e.js","/fairy-dream-face-painting/_next/static/chunks/7f4cf8914df42259.js"],"default"]
 6:I[59374,["/fairy-dream-face-painting/_next/static/chunks/c835ef42487ce2c8.js","/fairy-dream-face-painting/_next/static/chunks/f19e4129d752cb5c.js"],"OutletBoundary"]
 7:"$Sreact.suspense"
-0:{"buildId":"K4pUKBSeFN_MtfUNuUstJ","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/fairy-dream-face-painting/_next/static/chunks/cdae547031b4f34f.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"4QwoLn3FL76krRH3s2L9z","rsc":["$","$1","c",{"children":[["$","$L2",null,{"Component":"$3","serverProvidedParams":{"searchParams":{},"params":{},"promises":["$@4","$@5"]}}],[["$","script","script-0",{"src":"/fairy-dream-face-painting/_next/static/chunks/1437133c83fc954e.js","async":true}],["$","script","script-1",{"src":"/fairy-dream-face-painting/_next/static/chunks/7f4cf8914df42259.js","async":true}]],["$","$L6",null,{"children":["$","$7",null,{"name":"Next.MetadataOutlet","children":"$@8"}]}]]}],"loading":null,"isPartial":false}
 4:{}
 5:"$0:rsc:props:children:0:props:serverProvidedParams:params"
 8:null
