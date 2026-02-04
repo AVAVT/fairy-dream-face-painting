@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Helvetica, sans-serif;
+}
+
+@utility container-space {
+  @apply container mx-auto flex-auto px-3 lg:px-0;
+}
+
+@utility shadowed {
+  @aplly shadow-[0_3px_5px_rgba(0,0,0,0.2)];
+}
+
+a:hover {
+  text-decoration: underline;
+}
