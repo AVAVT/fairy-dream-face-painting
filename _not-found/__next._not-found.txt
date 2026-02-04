@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
 2:I[95321,["/fairy-dream-face-painting/_next/static/chunks/c835ef42487ce2c8.js","/fairy-dream-face-painting/_next/static/chunks/f19e4129d752cb5c.js"],"default"]
 3:I[82924,["/fairy-dream-face-painting/_next/static/chunks/c835ef42487ce2c8.js","/fairy-dream-face-painting/_next/static/chunks/f19e4129d752cb5c.js"],"default"]
-0:{"buildId":"jwy8626kl9mxfGBBcCw9U","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+0:{"buildId":"NLMKI0e5wo2N7O2_G1Iwf","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
