@@ -1,12 +1,19 @@
 "use client";
+
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import logo from "@/assets/logo.jpg";
 
 export function Header() {
   const pathName = usePathname();
   return (
-    <section className="bg-[#9C3C74] py-4 shadow-[0_0px_5px_rgba(0,0,0,0.2)] z-1 relative">
-      <div className="container-space justify-center text-xl flex gap-8 text-white font-bold">
+    <section className="py-4 relative flex flex-col items-center">
+      <div className="flex flex-col items-center mb-4">
+        <Image src={logo} alt="logo" width={200} height={200} />
+        <p>Let's make it magic</p>
+      </div>
+      <div className="container-space text-[#444444] text-xl flex gap-8 font-bold items-center justify-center">
         <Link
           href="/"
           className="hover:underline"
@@ -14,7 +21,16 @@ export function Header() {
             ? { style: { textDecoration: "underline" } }
             : {})}
         >
-          About Us
+          Home
+        </Link>
+        <Link
+          href="/about-me"
+          className="hover:underline"
+          {...(pathName === "/about-me"
+            ? { style: { textDecoration: "underline" } }
+            : {})}
+        >
+          About Me
         </Link>
         <Link
           href="/general-information"

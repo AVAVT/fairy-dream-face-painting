@@ -1,3 +1,5 @@
-export default function ContactPage() {
-  return <div></div>;
+import { ContactUs } from "@/component/contact-us";
+
+export default function ContactUsPage() {
+  return <ContactUs />;
 }
