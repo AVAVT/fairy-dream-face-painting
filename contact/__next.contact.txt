@@ -1,4 +1,4 @@
 1:"$Sreact.fragment"
-2:I[95321,["/fairy-dream-face-painting/_next/static/chunks/c835ef42487ce2c8.js","/fairy-dream-face-painting/_next/static/chunks/f19e4129d752cb5c.js"],"default"]
-3:I[82924,["/fairy-dream-face-painting/_next/static/chunks/c835ef42487ce2c8.js","/fairy-dream-face-painting/_next/static/chunks/f19e4129d752cb5c.js"],"default"]
-0:{"buildId":"YaABTNPRKuVPkHqtAh9M2","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
+2:I[65970,["/fairy-dream-face-painting/_next/static/chunks/e38e636b506a5c61.js","/fairy-dream-face-painting/_next/static/chunks/7f4de48cd2c2affb.js"],"default"]
+3:I[88627,["/fairy-dream-face-painting/_next/static/chunks/e38e636b506a5c61.js","/fairy-dream-face-painting/_next/static/chunks/7f4de48cd2c2affb.js"],"default"]
+0:{"buildId":"hQk6cDiAPNI93WOGyit4T","rsc":["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","template":["$","$L3",null,{}]}]]}],"loading":null,"isPartial":false}
