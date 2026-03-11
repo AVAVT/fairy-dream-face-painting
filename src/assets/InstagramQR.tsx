@@ -2,10 +2,11 @@ const InstagramQR = ({ ...props }) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="120"
-      viewBox="118 65 95 25"
-      height="90"
+      width="100"
+      viewBox="115 42 100 70"
+      height="70"
       version="1.0"
+      preserveAspectRatio="xMinYMin meet"
       {...props}
     >
       <title>Instagram QR</title>

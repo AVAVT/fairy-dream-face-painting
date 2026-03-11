@@ -11,9 +11,9 @@ export function Header() {
     <section className="py-4 relative flex flex-col items-center">
       <div className="flex flex-col items-center mb-4">
         <Image src={logo} alt="logo" width={200} height={200} />
-        <p>Let's make it magic</p>
+        <p className="text-sm sm:text-base">Let's make it magic</p>
       </div>
-      <div className="container-space text-[#444444] text-xl flex gap-8 font-bold items-center justify-center">
+      <div className="container-space text-[#444444] sm:text-lg lg:text-xl flex gap-8 font-bold items-center justify-center">
         <Link
           href="/"
           className="hover:underline"

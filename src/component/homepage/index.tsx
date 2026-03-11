@@ -162,7 +162,7 @@ export function MainPageContent({ isClient }: { isClient: boolean }) {
     <main className="flex flex-col">
       <section className="py-12 relative">
         <div className="flex flex-col lg:flex-row gap-12 container-space justify-center items-center">
-          <div className="lg:order-1 flex-0 w-[400px]">
+          <div className="lg:order-1 flex-0 w-[300px]">
             <Slider {...settings2}>
               {welcomeImages.map((img) => (
                 <div key={img.alt} className="px-4">
@@ -170,8 +170,8 @@ export function MainPageContent({ isClient }: { isClient: boolean }) {
                     className="max-h-full max-w-full flex-0 rounded-lg shadow-md"
                     src={img.name}
                     alt="who we are"
-                    width={400}
-                    height={400}
+                    width={300}
+                    height={300}
                     preload
                   />
                 </div>
@@ -218,18 +218,16 @@ export function MainPageContent({ isClient }: { isClient: boolean }) {
             className="h-[100%] flex-0 rounded-lg shadow-md my-4"
             src={dbsCheck}
             alt="DBS check"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             preload
           />
-          <div className="flex-1 px-4 lg:px-0 max-w-[40rem]">
-            <div className="py-4 rounded-lg flex flex-col gap-4 text-lg leading-[1.6]">
-              <p>
-                We are fully DBS checked and insured up to £5 million to give
-                you peace of mind. Please feel free to contact us if you require
-                further information.
-              </p>
-            </div>
+          <div className="flex-1 px-4 lg:px-0 max-w-[40rem] text-lg leading-[1.6]">
+            <p>
+              We are fully DBS checked and insured up to £5 million to give you
+              peace of mind. Please feel free to contact us if you require
+              further information.
+            </p>
           </div>
         </div>
       </section>
@@ -239,23 +237,21 @@ export function MainPageContent({ isClient }: { isClient: boolean }) {
             className="h-[100%] flex-0 rounded-lg shadow-md my-4 lg:order-1"
             src={safety}
             alt="Safety"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             preload
           />
-          <div className="flex-1 px-4 lg:px-0 max-w-[40rem] lg:order-0">
-            <div className="py-4 rounded-lg flex flex-col gap-4 text-lg leading-[1.6]">
-              <p>
-                We only use professional EC compliant water-based face paints,
-                which are designed specifically for use on the face and body -
-                such as Diamond FX, Tag, Fusion, Super Star, etc. For detailed
-                information about our safety standards, please see{" "}
-                <Link href="/general-information" className="underline">
-                  this page
-                </Link>
-                .
-              </p>
-            </div>
+          <div className="flex-1 px-4 lg:px-0 max-w-[40rem] lg:order-0 text-lg leading-[1.6]">
+            <p>
+              We only use professional EC compliant water-based face paints,
+              which are designed specifically for use on the face and body -
+              such as Diamond FX, Tag, Fusion, Super Star, etc. For detailed
+              information about our safety standards, please see{" "}
+              <Link href="/general-information" className="underline">
+                this page
+              </Link>
+              .
+            </p>
           </div>
         </div>
       </section>
@@ -265,37 +261,43 @@ export function MainPageContent({ isClient }: { isClient: boolean }) {
             className="h-[100%] flex-0 rounded-lg shadow-md my-4"
             src={hygene}
             alt="hygene"
-            width={400}
-            height={400}
+            width={300}
+            height={300}
             preload
           />
-          <div className="flex-1 px-4 lg:px-0 max-w-[40rem]">
-            <div className="py-4 rounded-lg flex flex-col gap-4 text-lg leading-[1.6]">
-              <p>
-                We are compliant with all industry standards for hygiene. Please
-                find more details here.
-              </p>
-            </div>
+          <div className="flex-1 px-4 lg:px-0 max-w-[40rem] text-lg leading-[1.6]">
+            <p>
+              We are compliant with all industry standards for hygiene. Please
+              find more details here.
+            </p>
           </div>
         </div>
       </section>
       <section className="relative">
         <div className="py-12 flex flex-col gap-6 justify-center items-center relative">
           <h2 className="text-3xl font-bold">Follow Us</h2>
-          <div className="flex flex-col lg:flex-row gap-12">
+          <div className="flex flex-row gap-12">
             <a
               href="https://www.facebook.com/profile.php?id=61585800795455"
               target="_blank"
               rel="noopener"
             >
-              <FacebookQR className="w-[360px] h-[270px] hover:-translate-y-1 duration-150" />
+              <FacebookQR
+                className="hover:-translate-y-1 duration-150"
+                width="100%"
+                height="100%"
+              />
             </a>
             <a
               href="https://www.instagram.com/fairydreampainting/"
               target="_blank"
               rel="noopener"
             >
-              <InstagramQR className="w-[360px] h-[270px] hover:-translate-y-1 duration-150" />
+              <InstagramQR
+                className="hover:-translate-y-1 duration-150"
+                width="100%"
+                height="100%"
+              />
             </a>
           </div>
           <div className="text-center text-xl mt-2">
@@ -317,7 +319,7 @@ export function MainPageContent({ isClient }: { isClient: boolean }) {
                     src={img.name}
                     width={img.width}
                     height={img.height}
-                    className="max-h-[40lvh] w-auto rounded-2xl shadow-[0_3px_5px_rgba(0,0,0,0.2)] mx-auto border-[0.4lvw] border-[#fffdfd]"
+                    className="max-h-[30lvh] w-auto rounded-2xl shadow-[0_3px_5px_rgba(0,0,0,0.2)] mx-auto border-[0.4lvw] border-[#fffdfd]"
                     {...(isClient
                       ? {
                           style: {

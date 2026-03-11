@@ -9,7 +9,7 @@ export default function nextConfig(phase: string) {
 
   return {
     output: "export",
-    basePath: "/fairy-dream-face-painting",
+    basePath: "",
     images: {
       unoptimized: true,
     },
