@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "react-slick";
-import arm4 from "@/assets/arm4.jpg";
 import dbsCheck from "@/assets/dbs-check.jpeg";
 import FacebookQR from "@/assets/FacebookQR";
 import face0 from "@/assets/face0.jpg";
@@ -10,11 +9,16 @@ import face2 from "@/assets/face2.jpg";
 import face3 from "@/assets/face3.jpg";
 import face4 from "@/assets/face4.jpg";
 import face5 from "@/assets/face5.jpg";
-import face6 from "@/assets/face6.jpg";
 import face7 from "@/assets/face7.jpg";
 import face8 from "@/assets/face8.jpg";
 import face9 from "@/assets/face9.jpg";
 import face10 from "@/assets/face10.jpg";
+import face11 from "@/assets/face11.jpg";
+import face12 from "@/assets/face12.jpg";
+import face13 from "@/assets/face13.jpg";
+import face14 from "@/assets/face14.jpg";
+import face15 from "@/assets/face15.jpg";
+import face16 from "@/assets/face16.jpg";
 import hygene from "@/assets/hygene.jpeg";
 import InstagramQR from "@/assets/InstagramQR";
 import safety from "@/assets/safety.jpeg";
@@ -27,8 +31,8 @@ const randomRotate = (deg: number) => Math.random() * deg * 2 - deg;
 const carouselImages = [
   {
     name: face0,
-    width: 1536,
-    height: 2048,
+    width: 1787,
+    height: 2979,
     rotate: randomRotate(4),
     alt: "Face Painting 0",
   },
@@ -41,8 +45,8 @@ const carouselImages = [
   },
   {
     name: face2,
-    width: 1317,
-    height: 1645,
+    width: 2040,
+    height: 3293,
     rotate: randomRotate(4),
     alt: "Face Painting 2",
   },
@@ -55,8 +59,8 @@ const carouselImages = [
   },
   {
     name: face4,
-    width: 2048,
-    height: 1536,
+    width: 1985,
+    height: 3153,
     rotate: randomRotate(4),
     alt: "Face Painting 4",
   },
@@ -68,11 +72,18 @@ const carouselImages = [
     alt: "Face Painting 5",
   },
   {
-    name: face6,
-    width: 1536,
-    height: 2048,
+    name: face11,
+    width: 2267,
+    height: 4032,
     rotate: randomRotate(4),
-    alt: "Face Painting 6",
+    alt: "Face Painting 10",
+  },
+  {
+    name: face15,
+    width: 2103,
+    height: 2942,
+    rotate: randomRotate(4),
+    alt: "Face Painting 10",
   },
   {
     name: face7,
@@ -80,6 +91,14 @@ const carouselImages = [
     height: 1330,
     rotate: randomRotate(4),
     alt: "Face Painting 7",
+  },
+
+  {
+    name: face12,
+    width: 1915,
+    height: 3403,
+    rotate: randomRotate(4),
+    alt: "Face Painting 10",
   },
   {
     name: face8,
@@ -89,11 +108,25 @@ const carouselImages = [
     alt: "Face Painting 8",
   },
   {
+    name: face13,
+    width: 2268,
+    height: 4032,
+    rotate: randomRotate(4),
+    alt: "Face Painting 10",
+  },
+  {
     name: face9,
     width: 1278,
     height: 1814,
     rotate: randomRotate(4),
     alt: "Face Painting 9",
+  },
+  {
+    name: face14,
+    width: 2268,
+    height: 4032,
+    rotate: randomRotate(4),
+    alt: "Face Painting 10",
   },
   {
     name: face10,
@@ -103,11 +136,11 @@ const carouselImages = [
     alt: "Face Painting 10",
   },
   {
-    name: arm4,
-    width: 2048,
-    height: 1361,
+    name: face16,
+    width: 1152,
+    height: 2048,
     rotate: randomRotate(4),
-    alt: "Arm Painting 4",
+    alt: "Face Painting 10",
   },
 ];
 
@@ -314,20 +347,22 @@ export function MainPageContent({ isClient }: { isClient: boolean }) {
             <Slider {...settings} className="mx-auto">
               {carouselImages.map((img) => (
                 <div key={img.alt} className="py-4 flex text-center">
-                  <Image
-                    alt={img.alt}
-                    src={img.name}
-                    width={img.width}
-                    height={img.height}
-                    className="max-h-[30lvh] w-auto rounded-2xl shadow-[0_3px_5px_rgba(0,0,0,0.2)] mx-auto border-[0.4lvw] border-[#fffdfd]"
-                    {...(isClient
-                      ? {
-                          style: {
-                            transform: `rotateZ(${img.rotate}deg)`,
-                          },
-                        }
-                      : {})}
-                  />
+                  <div className="px-1">
+                    <Image
+                      alt={img.alt}
+                      src={img.name}
+                      width={img.width}
+                      height={img.height}
+                      className="max-h-[30lvh] w-auto rounded-2xl shadow-[0_3px_5px_rgba(0,0,0,0.2)] mx-auto border-[0.4lvw] border-[#fffdfd]"
+                      {...(isClient
+                        ? {
+                            style: {
+                              transform: `rotateZ(${img.rotate}deg)`,
+                            },
+                          }
+                        : {})}
+                    />
+                  </div>
                 </div>
               ))}
             </Slider>
